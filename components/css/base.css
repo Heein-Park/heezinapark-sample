@@ -1,0 +1,141 @@
+
+/* Basically setting all fontface in a website to Averia Serif Libre made by Dan Sayers */
+/* then change a size of a font responsively. */
+/* Breakpoints: 720px, 960px */
+
+body {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.8rem;
+
+  background-color: #000;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
+  overflow-wrap: break-word;
+}
+
+body * {
+  box-sizing: inherit;
+}
+
+button {
+  font-size: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+hr {
+  border-style: solid;
+  border-radius: 1px;
+  border-color: #000;
+  border-width: 0.5px;
+  margin-block-start: none;
+  margin-block-end: none;
+}
+
+ol, ul {
+  list-style-position: outside;
+  margin-inline-start: 1.6em;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: lower-roman;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-block-end: 1.8rem;
+}
+
+article img {
+  margin-bottom: 3.2rem;
+  max-width: 100%;
+}
+
+em {
+  font-style: italic;
+}
+
+input {
+  padding:0px;
+}
+
+header {
+  padding-top: 1.8rem;
+}
+
+pre {
+  overflow: auto;
+  padding: 1.8rem;
+  background-color: #eee;
+  line-height: 1.6rem;
+  margin-block-end: 1.8rem;
+}
+
+code {
+  font-size: 0.9rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+footer {
+  padding-bottom: 1.8rem;
+  line-height: 1.6rem;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-block-end: 0;
+  text-indent: 0;
+}
+
+@media all and (max-width: 720px) {
+    body {
+      font-size: 17px;
+      padding-left: 4px;
+      padding-right: 4px;
+      line-height: 1.4rem;
+    }
+
+    footer {
+      display: block;
+      line-height: 1.6rem;
+      font-size: 16px;
+    }
+}
+
+@media all and (min-width: 720px) and (max-width: 960px) {
+    body {
+      font-size: 18px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+}

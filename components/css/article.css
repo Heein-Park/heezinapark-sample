@@ -1,0 +1,46 @@
+/* Email Form */
+article header, article main, article footer {
+  padding-top: inherit;
+  padding-bottom: inherit;
+  min-height: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  display: inherit;
+  justify-content: inherit;
+}
+
+article ul li {
+  margin-block-end:1rem;
+}
+
+article.preview footer .flexBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+article footer .tags {
+  flex-grow: 1;
+}
+
+article footer .reply {
+  flex-grow: 0;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+article footer .reply a:before {
+  content: none;
+}
+
+article footer .reply a {
+  background-image: url("https://dev.heez.in/blog-cms/public/uploads/bureau/originals/424fef2e-8034-4803-8cb7-4f620a45ad1c.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+@media all and (max-width: 720px) {
+  article.preview footer {
+    display: block;
+  }
+}

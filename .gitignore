@@ -125,3 +125,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Configs
+configs/
+
+# Manifest
+manifest.json
+
+# Sitemap
+sitemap*.xml
+
+# Robots
+robots*

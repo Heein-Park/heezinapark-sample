@@ -1,0 +1,64 @@
+{
+  "name": "heez-in-a-park-site-generator",
+  "version": "1.0.4",
+  "description": "A Blog Synchronized with A Headless CMS Directus",
+  "private": true,
+  "author": {
+    "name": "Heein Park",
+    "email": "gmldls94@gmail.com",
+    "url": "http://heez.in/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Heein-Park/site-generator.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap --config ./configs/next-sitemap.config.js",
+    "export": "next export",
+    "start": "node server.js",
+    "test": "jest",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.10",
+    "@portabletext/react": "^2.0.2",
+    "@portabletext/types": "^2.0.2",
+    "@react-three/drei": "^9.65.3",
+    "@react-three/fiber": "^8.12.1",
+    "@vercel/analytics": "^0.1.11",
+    "express": "^4.18.2",
+    "next": "^13.2.4",
+    "next-sanity": "^4.1.5",
+    "next-seo": "^6.0.0",
+    "next-sitemap": "^4.0.7",
+    "node-fetch": "^2.6.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanitize-html": "^2.8.0",
+    "sanity": "^3.8.1",
+    "swr": "^2.0.0",
+    "three": "^0.147.0"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.1.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/three": "^0.150.1",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-react": "^7.32.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "prettier": "^2.8.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.76.0"
+  }
+}
